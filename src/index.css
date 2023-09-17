@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .field-container {
+        @apply [&]:flex [&]:flex-col [&]:gap-y-1;
+    }
+
+    .label-styling {
+        @apply [&]:font-medium [&]:text-gray-900 [&]:tracking-wider;
+    }
+
+    .text-input-styling {
+        @apply [&]:text-gray-900 [&]:placeholder:text-gray-400 [&]:bg-white [&]:border [&]:border-blue-500 [&]:rounded-md [&]:focus:outline-none [&]:focus:border-black [&]:transition-colors [&]:duration-200 [&]:px-2.5 [&]:py-1;
+    }
+}
